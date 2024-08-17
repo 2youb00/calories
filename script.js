@@ -1,6 +1,6 @@
 let stepCount = 0;
 let lastAcceleration = { x: 0, y: 0, z: 0 };
-let stepThreshold = 10;  
+let stepThreshold = 70;  
 let alertShown = false;
 
 if(window.DeviceMotionEvent){
