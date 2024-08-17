@@ -2,8 +2,9 @@ let stepCount = 0;
 let lastAcceleration = { x: 0, y: 0, z: 0 };
 let stepThreshold = 10;  // عتبة الكشف عن الخطوة
 if(window.DeviceMotionEvent){
-window.addEventListener('devicemotion', function(event) {
     alert("device is supported");
+    
+window.addEventListener('devicemotion', function(event) {
     let currentAcceleration = event.acceleration;
     
     let deltaX = Math.abs(currentAcceleration.x - lastAcceleration.x);
